@@ -24,7 +24,8 @@
         state: present 
 #Use command module     
     - name: Increase virtual memory
-      command: sysctl -w vm.max_map_count=262144      # Use sysctl module
+      command: sysctl -w vm.max_map_count=262144      
+# Use sysctl module
     - name: Use more memory
       sysctl:
         name: vm.max_map_count
